@@ -1,11 +1,11 @@
 <!--
-Author: Bipin Jitiya
-Year: 2023
+Author: Christopher B. Celaya
+Year: 2024
 -->
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Self-ChatGPT - Self-Talking AI</title>
+      <title>Self-Talking AI</title>
 
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,21 +23,20 @@ Year: 2023
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
 
-         gtag('config', 'G-4RDF082TXM');
+         gtag('config', '');
       </script>
 
       <!-- Facebook Meta Tags -->
-      <meta property="og:url" content="https://win3zz.com/Self-ChatGPT/index.html">
+      <meta property="og:url" content="https://chriscelaya.xyz">
       <meta property="og:type" content="website">
       <meta property="og:title" content="Self-ChatGPT - Self-Talking AI">
       <meta property="og:description" content="Self-ChatGPT is an online AI platform that enables AI to talk to itself, ask questions, and try to figure out answers and reply to itself in real-time. Experience the power of cutting-edge AI technology, all without any human interaction required.">
-      <meta property="og:image" content="https://win3zz.com/Self-ChatGPT/hero-image.jpg">
       
       <!-- Twitter Meta Tags -->
       <meta name="twitter:card" content="summary_large_image">
-      <meta property="twitter:domain" content="win3zz.com">
+      <meta property="twitter:domain" content="chriscelaya.xyz">
       <meta property="twitter:url" content="https://win3zz.com/Self-ChatGPT/index.html">
-      <meta name="twitter:title" content="Self-ChatGPT - Self-Talking AI">
+      <meta name="twitter:title" content="Self-Talking AI">
       <meta name="twitter:description" content="Self-ChatGPT is an online AI platform that enables AI to talk to itself, ask questions, and try to figure out answers and reply to itself in real-time. Experience the power of cutting-edge AI technology, all without any human interaction required.">
       <meta name="twitter:image" content="https://win3zz.com/Self-ChatGPT/hero-image.jpg">
       
@@ -48,12 +47,12 @@ Year: 2023
       <link rel="icon" href="favicon.ico" type="image/x-icon">
 
    </head>
-   <body style="background-color: #FCF5EB;">
+   <body style="background-color: #fcfcfc;">
       
       <div class="container my-3">
 
          <h1 class="text-center mb-3 fw-bold">
-            <img src="Self-ChatGPTChatLogo.png" alt="Self-ChatGPT Logo" height="100" width="100" class="img-fluid me-2">Self-ChatGPT<span class="badge rounded-pill ms-2 text-success-emphasis bg-success-subtle border border-success-subtle fw-medium fs-6">Beta v1.0</span>
+            <img src="Self-ChatGPTChatLogo.png" alt="Self-ChatGPT Logo" height="100" width="100" class="img-fluid me-2">ChatterSync<span class="badge rounded-pill ms-2 text-success-emphasis bg-success-subtle border border-success-subtle fw-medium fs-6">Beta Version: 1.0</span>
          </h1>
          
          <div class="card shadow">
@@ -63,20 +62,21 @@ Year: 2023
                   <div class="row g-3">
                      <div class="col">
                         <div class="input-group w-100 has-validation">
+                           <button id="message-stop" class="btn btn-danger px-4" type="button">Stop</button>
                            <input type="text" class="form-control" id="message-input" placeholder="Type your message here..." required>
                            <button id="message-send" class="btn btn-primary px-4" type="submit">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
                                  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
                               </svg>
                            </button>
-                           <div class="invalid-feedback">Please enter a message before sending.</div>
+                           <div class="invalid-feedback">Enter a message before sending.</div>
                         </div>
                      </div>
                      <div class="col-md-auto">                        
                         <select class="form-select" id="prompt-select" required>
-                           <option value="" selected disabled>Pick a behavior for bot</option>
+                           <option value="" selected disabled>Pick the AI behavior</option>
                         </select>
-                        <div class="invalid-feedback">Please select a behavior for the bot.</div>                     
+                        <div class="invalid-feedback">Select a behavior for the AI.</div>                     
                      </div>    
                      <div class="col-md-auto">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#apiKeyModal">Enter API Key</button>
@@ -117,11 +117,11 @@ Year: 2023
                         <h5 class="modal-title" id="apiKeyModalLabel">Enter OpenAI API Key</h5>
                      </div>
                      <div class="modal-body">
-                        <p>To use Self-ChatGPT, you will need to enter your OpenAI API key in the field below. If you don't have an API key yet, please go to the <a href="https://openai.com/" class="link-like-WhatsApp" target="_blank">OpenAI website</a> and sign up for an account to get one.</p>
+                        <p>To use this, you will need to enter your OpenAI API key in the field below. If you don't have an API key yet, please go to the <a href="https://openai.com/" class="link-like-WhatsApp" target="_blank">OpenAI website</a> and sign up for an account to get one.</p>
                         <div class="mb-3">
                            <label for="apiKeyInput" class="form-label">API Key</label>
                            <input type="password" class="form-control" id="apiKeyInput" placeholder="Enter your API Key here..." required>
-                           <div class="invalid-feedback">Please enter API key.</div>
+                           <div class="invalid-feedback">Enter an API key.</div>
                         </div> 
                      </div>
                      <div class="modal-footer">
@@ -132,12 +132,12 @@ Year: 2023
             </div>
          </div>
 
-         <p class="mt-3 fw-light">Self-ChatGPT is an open source AI behavioral research project available on <a href="https://github.com/win3zz/Self-ChatGPT" target="_blank" class="link-like-WhatsApp">GitHub</a>.</p> 
+         <p class="mt-3 fw-light">ChatterSync is an open source AI behavioral research project. Source code available on <a href="https://github.com/while-basic/Self-ChatGPT" target="_blank" class="link-like-WhatsApp">GitHub</a>.</p> 
          
          <hr>
 
          <p class="mt-4 mb-3 text-muted small text-center">
-            &copy; <script>document.write(new Date().getFullYear());</script> Developed by <a href="https://win3zz.com/" class="link-like-WhatsApp" target="_blank">Bipin Jitiya</a> | <a href="#" class="link-like-WhatsApp" data-bs-toggle="modal" data-bs-target="#disclaimer-modal">Disclaimer</a>
+            &copy; <script>document.write(new Date().getFullYear());</script> Developed by <a href="https://chriscelaya.xyz/" class="link-like-WhatsApp" target="_blank">Christopher Celaya</a> | <a href="#" class="link-like-WhatsApp" data-bs-toggle="modal" data-bs-target="#disclaimer-modal">Disclaimer</a>
          </p>
       
       </div>

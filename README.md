@@ -1,5 +1,3 @@
-![Self-ChatGPTChatLogo](https://user-images.githubusercontent.com/12781459/233822692-7d94ce5d-5deb-44f1-ac7e-b44406798156.png)
-
 
 # Welcome to Self-ChatGPT!
 
@@ -11,20 +9,16 @@ Self-ChatGPT is an open-source platform that enables discussions between two AI 
 
 This project uses OpenAI's API to generate responses. It uses the OpenAI `gpt-3.5-turbo` model with `temperature 0.7`. The output of the API becomes the input to the API itself, and the conversation continues in this manner. Self-ChatGPT is intended for use by AI researchers and developers who are interested in exploring the behavior of AI and its potential consequences.
 
-## How to use 
+## How to use
 
 To run Self-ChatGPT, all you need is a web browser and an OpenAI API key. Simply type a message and choose the behavior for the chatbot from a drop-down list. After sending a message, the chatbot will begin a conversation with itself based on the selected behavior.
 
 **To try out the live demo, [click here](https://win3zz.com/Self-ChatGPT/)**
 
-
 ## See Self-ChatGPT in Action: A Video Demo
 
-[![Self-ChatGPT-Demo-Video-Thumbnail](https://user-images.githubusercontent.com/12781459/233822704-c76c5567-5b01-4010-9f7f-68aa97092817.png)](https://youtu.be/0uB7S7EzbIM)
-
-
-
 ## Purpose and Benefits
+
 The purpose of Self-ChatGPT is to provide a tool for researchers to study the behavior of AI and identify any potential risks or threats it may pose to humanity. By analyzing the conversations between the chatbots, researchers can gain insight into the thought processes of AI and how it might react in different scenarios. This information can be used to develop new strategies for managing and controlling AI to ensure that it remains safe and beneficial.
 
 By facilitating conversations between AI chatbots, we can:
@@ -34,7 +28,6 @@ By facilitating conversations between AI chatbots, we can:
 - Identify potential risks associated with AI and work to prevent them
 - Foster innovation and advance the field of AI research
 - Testing and evaluation of AI systems in a secure and controlled environment
-
 
 ## Adding New Behaviors
 
@@ -53,7 +46,6 @@ Self-ChatGPT is highly customizable. To add a new behavior, simply add a new obj
       }
 }
 ```
-
 
 ## How It Works
 
@@ -91,7 +83,7 @@ It is important to use Self-ChatGPT primarily as a research tool rather than a p
 
 The future of Artificial Intelligence (AI) is exciting and full of possibilities. However, with such great power comes great responsibility, and it is important that we understand AI's behavior and its potential consequences before we unleash it upon the world.
 
-> _"The greatest danger of artificial intelligence is that people conclude too early that they understand it."_ **- Eliezer Yudkowsky**
+> *"The greatest danger of artificial intelligence is that people conclude too early that they understand it."* **- Eliezer Yudkowsky**
 
 The potential consequences of AI include everything from job displacement to loss of privacy, to the creation of autonomous weapons. AI researchers and developers have a responsibility to consider the ethical implications of their work and to develop AI systems that are consistent with human values.
 
@@ -111,11 +103,8 @@ The potential consequences of AI include everything from job displacement to los
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
 ## Contact
 
 If you have any questions, feedback or just want to say hi, feel free to reach out to me at bipin@cuberk.com. You can also visit my website at [www.win3zz.com](https://win3zz.com/) to learn more about me and my work. Cheers! 🥂😊
 
-[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)
-
-
+[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)

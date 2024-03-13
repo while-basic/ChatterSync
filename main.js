@@ -6,9 +6,12 @@ let currentRole = "";
 let currentPromptPrefix = "";
 let lastRequestTime = 0;
 let delaySeconds = 4;
+let isSendingMessages = false;
 var prompts = [];
 
 $(document).ready(function() {
+
+    $('#message-stop').prop('disabled', true);
 
     if (!document.cookie.includes("disclaimer_ack=true")) {
         var disclaimerModal = new bootstrap.Modal($("#disclaimer-modal"));
@@ -42,8 +45,16 @@ $(document).ready(function() {
             $('#apiKeyModal').modal('hide');
         }    
     });
-
 });
+
+    // Handler for the Stop button
+$('#message-stop').click(function() {
+    isSendingMessages = false; // Indicate that the message sending should stop
+    $(this).prop('disabled', true); // Disable the stop button since stopping is in progress
+    $('#chat-form').find(':input').not('#message-stop').prop('disabled', false); // Re-enable other form inputs
+    console.log('Stop button clicked. Message sending is halted.');
+});
+    
 
 $("#prompt-select").change(function() {
     var index = this.value;
@@ -68,9 +79,11 @@ $('#chat-form').submit(function(event) {
         form.classList.remove('was-validated');
         $(this).find(':input').prop('disabled', true);
         if (message !== '') {
+            isSendingMessages = true; // Set the flag to true when starting to send messages
             printMessage('bot1', message, true);
 
             sendRequest(currentRole, currentPromptPrefix + message).then(response => {
+                if (!isSendingMessages) return; // Check the flag here
                 $('#typing-element').remove();
                 if (response.code === 200) {
                     const text = response.data.choices[0].message.content.trim();
@@ -81,14 +94,19 @@ $('#chat-form').submit(function(event) {
                     console.error(JSON.stringify(response));
                 }
             }).catch(error => {
+                if (!isSendingMessages) return; // Check the flag here
                 printMessage('bot2', 'Sorry, something went wrong. Please check the browser console for more information.');
                 console.error(error);
             });
 
             $('#message-input').val('');
+        } else {
+            // Re-enable inputs if no message is being sent
+            $(this).find(':input').prop('disabled', false);
         }
     }
 });
+
 
 function printMessage(sender, message, isTyping) {
     const chatContainer = $('#chat-container');
@@ -154,8 +172,8 @@ async function sendRequest(prompt, msgInput) {
         body: JSON.stringify({
                 "model": "gpt-3.5-turbo",
                 "messages": [{"role": "system", "content": prompt},{"role": "user", "content": msgInput}],
-                "temperature": 0.7,
-                "max_tokens": 100
+                "temperature": 0.8,
+                "max_tokens": 200
         })
     };
     const response = await fetch('https://api.openai.com/v1/chat/completions', requestOptions);
