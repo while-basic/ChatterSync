@@ -1,16 +1,16 @@
 .btn-primary {
-   background-color: #34B7F1; /* Lighter blue for primary action */
-   border-color: #34B7F1; /* Consistent with the background */
-   color: #fff; /* White text for contrast */
+   background-color: #218aff; /* Lighter blue for primary action */
+   border-color: #218aff; /* Consistent with the background */
+   color: #ffffff; /* White icon text for contrast */
    font-weight: 500;
    border: none;
    box-shadow: none;
    text-shadow: none;
 }
 .btn-primary:hover {
-   background-color: #128C7E; /* Darker shade for hover state */
-   border-color: #128C7E;
-   color: #fff;
+   background-color: #163b4b; /* Darker shade for hover state */
+   border-color: #092836;
+   color: #218aff;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -18,13 +18,13 @@
    box-shadow: 0 0 0 0.25rem rgba(50, 183, 241, 0.5); /* Light blue glow */
 }
 .form-control:focus {
-   border-color: #34B7F1;
+   border-color: #218aff;
    outline: none;
    box-shadow: none;
 }
 select.form-select {
    background-color: #fff;
-   color: #34B7F1; /* Text color to match the primary blue */
+   color: #878787; /* Text color to match the primary blue */
 }
 select.form-select:hover {
    background-color: #f2f2f2;
@@ -56,7 +56,7 @@ select.form-select:disabled {
    clear: both; 
 }
 .bot1 {
-   background-color: #DCF8C6; /* Light green for one chat entity */
+   background-color: #39ff5a; /* Light green for one chat entity */
    color: #000;
    float: left;
    box-shadow: 1px 1px 2px rgba(0, 0, 0, .15);
@@ -64,8 +64,8 @@ select.form-select:disabled {
    margin-right: 20px;
 }
 .bot2 {
-   background-color: #F5F5F5; /* Light gray for another chat entity */
-   color: #000;
+   background-color: #218aff; /* Light gray for another chat entity */
+   color: #ffffff;
    float: right;
    box-shadow: 1px 1px 2px rgba(0, 0, 0, .15);
    position: relative;
@@ -112,10 +112,10 @@ select.form-select:disabled {
 .link-like-WhatsApp:hover,
 .link-like-WhatsApp:active {
    text-decoration: underline;
-   color: #128C7E; /* Darker green for active/hover states */
+   color: #218aff; /* Darker green for active/hover states */
 }
 h1 {
-   color: #34B7F1; /* Blue for primary headers */
+   color: #218aff; /* Blue for primary headers */
    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 h1 span {
