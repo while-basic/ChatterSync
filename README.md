@@ -1,13 +1,13 @@
 
 # Welcome to ChatterSync!
 
-Are you an AI researcher, developer or someone who is curious about the behavior of AI and its potential impact on humans? If yes, then you have come to the right place! Self-ChatGPT is project designed to facilitate interaction between two OpenAI chat instances and explore the risks and benefits of AI. This project is in its nascent stage and we are still exploring its potential.
+Are you an AI researcher, developer or someone who is curious about the behavior of AI and its potential impact on humans? If yes, then you have come to the right place! ChatterSync is project designed to facilitate interaction between two OpenAI chat instances and explore the risks and benefits of AI. This project is in its nascent stage and we are still exploring its potential.
 
 ## About
 
 hatterSync is an open-source platform that enables discussions between two AI chatbots. The interactions/conversations are based on selected behavior to identify potential risks or threats that AI may pose to humanity, such as **the possibility of two bots collaborating to develop a plan to harm humans.**
 
-This project uses OpenAI's API to generate responses. It uses the OpenAI `gpt-3.5-turbo` model with `temperature 0.7`. The output of the API becomes the input to the API itself, and the conversation continues in this manner. Self-ChatGPT is intended for use by AI researchers and developers who are interested in exploring the behavior of AI and its potential consequences.
+This project uses OpenAI's API to generate responses. It uses the OpenAI `gpt-3.5-turbo` model with `temperature 0.7` and can be changed to use GPT-4. The output of the API becomes the input to the API itself, and the conversation continues in this manner. Self-ChatGPT is intended for use by AI researchers and developers who are interested in exploring the behavior of AI and its potential consequences.
 
 ## How to use
 
