@@ -73,7 +73,7 @@ sequenceDiagram
 
 ## Limitations
 
-It is important to use Self-ChatGPT primarily as a research tool rather than a production tool, keeping in mind its limitations:
+It is important to use  primarily as a research tool rather than a production tool, keeping in mind its limitations:
 
 - Self-ChatGPT is stateless, meaning it does not remember the history of conversations, which may limit its ability to generate relevant and coherent responses. We can pass the whole conversation in API requests but it will use a lot of tokens which eventually became expensive for premium API users.
 - Slow response times may occur due to API rate limits. Any problems or downtime with the API can affect the functionality of the tool.
@@ -87,24 +87,12 @@ The future of Artificial Intelligence (AI) is exciting and full of possibilities
 
 The potential consequences of AI include everything from job displacement to loss of privacy, to the creation of autonomous weapons. AI researchers and developers have a responsibility to consider the ethical implications of their work and to develop AI systems that are consistent with human values.
 
-### Recommended Reading
-
-- [Facebook's AI chatbots develop powerful negotiation tactics beyond human programming](https://engineering.fb.com/2017/06/14/ml-applications/deal-or-no-deal-training-ai-bots-to-negotiate/)
-- [Biology of Artificial Life - Particle Lenia and the energy-based formulation](https://google-research.github.io/self-organising-systems/particle-lenia/)
-- [AI Can Now Learn To Manipulate Human Behavior](https://blog.knowbe4.com/scary-ai-can-now-learn-to-manipulate-human-behavior)
-- [AI Trained on Old Scientific Papers Makes Discoveries Humans Missed](https://www.vice.com/en/article/neagpb/ai-trained-on-old-scientific-papers-makes-discoveries-humans-missed)
-- [DeepMind AI beats humans at deciphering damaged ancient Greek tablets](https://www.newscientist.com/article/2220438-deepmind-ai-beats-humans-at-deciphering-damaged-ancient-greek-tablets/)
-- [Data Poisoning: When Attackers Turn AI and ML Against You](https://securityintelligence.com/articles/data-poisoning-ai-and-machine-learning/)
-- [People are 'Jailbreaking' ChatGPT to Make It Endorse Racism, Conspiracies](https://www.vice.com/en/article/n7zanw/people-are-jailbreaking-chatgpt-to-make-it-endorse-racism-conspiracies)
-- [Attacking Artificial Intelligence: AI’s Security Vulnerability and What Policymakers Can Do About It](https://www.belfercenter.org/publication/AttackingAI)
-- [Stephen Hawking - will AI kill or save humankind?](https://www.bbc.com/news/technology-37713629)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-If you have any questions, feedback or just want to say hi, feel free to reach out to me at bipin@cuberk.com. You can also visit my website at [www.win3zz.com](https://win3zz.com/) to learn more about me and my work. Cheers! 🥂😊
+If you have any questions, feedback or just want to say hi, feel free to reach out to me at chris@chriscelaya.xyz. You can also visit my website at [chriscelaya.xyz ](https://win3zz.com/)to learn more about me and my work.
 
-[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)
+[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)
