@@ -96,6 +96,7 @@ $("#chat-form").submit(function (event) {
     if (message !== "") {
       isSendingMessages = true; // Start message sending
       printMessage("bot1", message, true); // Print user message
+       
 
       // Send message request and handle response
       sendRequest(currentRole, currentPromptPrefix + message)
