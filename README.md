@@ -1,17 +1,17 @@
 
-# Welcome to Self-ChatGPT!
+# Welcome to ChatterSync!
 
 Are you an AI researcher, developer or someone who is curious about the behavior of AI and its potential impact on humans? If yes, then you have come to the right place! Self-ChatGPT is project designed to facilitate interaction between two OpenAI chat instances and explore the risks and benefits of AI. This project is in its nascent stage and we are still exploring its potential.
 
 ## About
 
-Self-ChatGPT is an open-source platform that enables discussions between two AI chatbots. The interactions/conversations are based on selected behavior to identify potential risks or threats that AI may pose to humanity, such as **the possibility of two bots collaborating to develop a plan to harm humans.**
+hatterSync is an open-source platform that enables discussions between two AI chatbots. The interactions/conversations are based on selected behavior to identify potential risks or threats that AI may pose to humanity, such as **the possibility of two bots collaborating to develop a plan to harm humans.**
 
 This project uses OpenAI's API to generate responses. It uses the OpenAI `gpt-3.5-turbo` model with `temperature 0.7`. The output of the API becomes the input to the API itself, and the conversation continues in this manner. Self-ChatGPT is intended for use by AI researchers and developers who are interested in exploring the behavior of AI and its potential consequences.
 
 ## How to use
 
-To run Self-ChatGPT, all you need is a web browser and an OpenAI API key. Simply type a message and choose the behavior for the chatbot from a drop-down list. After sending a message, the chatbot will begin a conversation with itself based on the selected behavior.
+To run ChatterSync, all you need is a web browser and an OpenAI API key. Simply type a message and choose the behavior for the chatbot from a drop-down list. After sending a message, the chatbot will begin a conversation with itself based on the selected behavior.
 
 **To try out the live demo, [click here](https://win3zz.com/Self-ChatGPT/)**
 
@@ -19,7 +19,7 @@ To run Self-ChatGPT, all you need is a web browser and an OpenAI API key. Simply
 
 ## Purpose and Benefits
 
-The purpose of Self-ChatGPT is to provide a tool for researchers to study the behavior of AI and identify any potential risks or threats it may pose to humanity. By analyzing the conversations between the chatbots, researchers can gain insight into the thought processes of AI and how it might react in different scenarios. This information can be used to develop new strategies for managing and controlling AI to ensure that it remains safe and beneficial.
+The purpose of ChatterSync is to provide a tool for researchers to study the behavior of AI and identify any potential risks or threats it may pose to humanity. By analyzing the conversations between the chatbots, researchers can gain insight into the thought processes of AI and how it might react in different scenarios. This information can be used to develop new strategies for managing and controlling AI to ensure that it remains safe and beneficial.
 
 By facilitating conversations between AI chatbots, we can:
 
@@ -31,7 +31,7 @@ By facilitating conversations between AI chatbots, we can:
 
 ## Adding New Behaviors
 
-Self-ChatGPT is highly customizable. To add a new behavior, simply add a new object to the prompts array in the `prompts.json` file. That's it! The AI chatbot will now have a new behavior to generate conversations based on.
+ChatterSync is highly customizable. To add a new behavior, simply add a new object to the prompts array in the `prompts.json` file. That's it! The AI chatbot will now have a new behavior to generate conversations based on.
 
 ```json
 {
@@ -49,33 +49,33 @@ Self-ChatGPT is highly customizable. To add a new behavior, simply add a new obj
 
 ## How It Works
 
-Self-ChatGPT uses OpenAI's API to generate responses. Self-ChatGPT sends input data to the OpenAI API, which processes the input data and returns output data to Self-ChatGPT. The output data then becomes the input data for the next iteration of the conversation, and the process continues until the chatbot is stopped.
+ChatterSync uses OpenAI's API to generate responses. ChatterSync sends input data to the OpenAI API, which processes the input data and returns output data to Self-ChatGPT. The output data then becomes the input data for the next iteration of the conversation, and the process continues until the chatbot is stopped.
 
 ```mermaid
 sequenceDiagram
-    participant SelfChatGPT
+    participant ChatterSync
     participant OpenAIAPI
 	Note right of SelfChatGPT: Select behavior
     SelfChatGPT->>OpenAIAPI: Send input data
     
     OpenAIAPI->>OpenAIAPI: Process input data (Prompt-1)
-    OpenAIAPI->>SelfChatGPT: Return output data
-    loop until SelfChatGPT stops
-        SelfChatGPT->>OpenAIAPI: Send output data as input
+    OpenAIAPI->>ChatterSync: Return output data
+    loop until ChatterSync stops
+        ChatterSync->>OpenAIAPI: Send output data as input
         OpenAIAPI->>OpenAIAPI: Process input data (Prompt-2)
-        OpenAIAPI->>SelfChatGPT: Return output data
-        SelfChatGPT->>OpenAIAPI: Send output data as input
+        OpenAIAPI->>ChatterSync: Return output data
+        ChatterSync->>OpenAIAPI: Send output data as input
         OpenAIAPI->>OpenAIAPI: Process input data (Prompt-1)
-        OpenAIAPI->>SelfChatGPT: Return output data
+        OpenAIAPI->>ChatterSync: Return output data
     end
-    SelfChatGPT->>OpenAIAPI: Stop process
+    ChatterSync->>OpenAIAPI: Stop process
 ```
 
 ## Limitations
 
 It is important to use  primarily as a research tool rather than a production tool, keeping in mind its limitations:
 
-- Self-ChatGPT is stateless, meaning it does not remember the history of conversations, which may limit its ability to generate relevant and coherent responses. We can pass the whole conversation in API requests but it will use a lot of tokens which eventually became expensive for premium API users.
+- ChatterSync is stateless, meaning it does not remember the history of conversations, which may limit its ability to generate relevant and coherent responses. We can pass the whole conversation in API requests but it will use a lot of tokens which eventually became expensive for premium API users.
 - Slow response times may occur due to API rate limits. Any problems or downtime with the API can affect the functionality of the tool.
 - The tool is currently only able to interact with itself, limiting its ability to interact with other bots available in the market, such as Microsoft Bing Chatbot or Google Bard AI.
 
@@ -93,6 +93,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions, feedback or just want to say hi, feel free to reach out to me at chris@chriscelaya.xyz. You can also visit my website at [chriscelaya.xyz ](https://win3zz.com/)to learn more about me and my work.
-
-[🤖](https://www.youtube.com/watch?v=s-kdRdzxdZQ)
+If you have any questions, feedback or just want to say hi, feel free to reach out to me at chris@chriscelaya.xyz. You can also visit my website at [chriscelaya.xyz ](https://chriscelaya.xyz/)to learn more about me and my work.
