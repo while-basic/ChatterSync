@@ -13,7 +13,7 @@ This project uses OpenAI's API to generate responses. It uses the OpenAI `gpt-3.
 
 To run ChatterSync, all you need is a web browser and an OpenAI API key. Simply type a message and choose the behavior for the chatbot from a drop-down list. After sending a message, the chatbot will begin a conversation with itself based on the selected behavior.
 
-**To try out the live demo, [click here](https://win3zz.com/Self-ChatGPT/)**
+**To try out the live demo, [click here]([https://win3zz.com/Self-ChatGPT/](https://chatter-sync.vercel.app/))**
 
 ## See Self-ChatGPT in Action: A Video Demo
 
